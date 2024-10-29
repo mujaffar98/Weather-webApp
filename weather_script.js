@@ -23,22 +23,22 @@ async function getWeatherData(){
         userCity.value="";
 
         if(data.weather[0].main=="Clear"){
-            weatherImage.src = "/assets/clear.png";
+            weatherImage.src = "./assets/clear.png";
         }
         else if(data.weather[0].main=="Snow"){
-            weatherImage.src = "/assets/snow.png";
+            weatherImage.src = "./assets/snow.png";
         }
         else if(data.weather[0].main=="Cloud"){
-            weatherImage.src = "/assets/cloud.png";
+            weatherImage.src = "./assets/cloud.png";
         }
         else if(data.weather[0].main=="Drizzle"){
-            weatherImage.src = "/assets/drizzle.jpg";
+            weatherImage.src = "./assets/drizzle.jpg";
         }
         else if(data.weather[0].main=="Mist"){
-            weatherImage.src = "/assets/mist.png";
+            weatherImage.src = "./assets/mist.png";
         }
         else if(data.weather[0].main=="Rain"){
-            weatherImage.src = "/assets/rain.png";
+            weatherImage.src = "./assets/rain.png";
         }
         console.log(data)
     }
